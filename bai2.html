@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài Tập 2</title>
+        <style>
+            #form-dang-ky {
+                width: 400px;
+                border: 1px solid grey;
+                padding: 20px;
+                background-color: whitesmoke;
+            }
+            h2 {
+                color: blue;
+                text-align: center;
+            }
+            label {
+                font-size: 16px;
+            }
+            input {
+                padding: 5px;
+            }
+            .nut-dang-ky {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Đăng ký khóa học</h2>
+        <form id="form-dang-ky">
+            <p>
+                <label for="ho-va-ten">Họ và tên</label>
+                <input id="ho-va-ten" type="text" required />
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" type="email" required />
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" type="password" required />
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" type="password" required />
+            </p>
+            <p>
+                <label>Giới Tính:</label>
+                <label for="nam">
+                    <input id="nam" type="radio" name="gioi-tinh" /> Nam
+                </label>
+                <label for="nu">
+                    <input id="nu" type="radio" name="gioi-tinh" /> Nu
+                </label>
+            </p>
+            <p>
+                <label for="khoa-hoc">Khóa học:</label>
+                <select id="khoa-hoc">
+                    <option value="">--Chọn Khóa Học--</option>
+                    <option value="html-css">HTML/CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="reactjs">ReactJS</option>
+                </select>
+            </p>
+            <textarea required placeholder="message..."></textarea>
+            <p>
+                <label for="dieu-khoan">
+                    <input id="dieu-khoan" type="checkbox" />Tôi đồng ý với điều
+                    khoản
+                </label>
+            </p>
+            <button type="submit" class="nut-dang-ky">Đăng ký</button>
+        </form>
+    </body>
+</html>
